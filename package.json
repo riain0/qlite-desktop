@@ -1,0 +1,137 @@
+{
+  "name": "qlite",
+  "productName": "QLite",
+  "version": "1.0.0",
+  "description": "QLite Control Centre",
+  "main": "src/index.ts",
+  "scripts": {
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish",
+    "lint": "tslint --project tsconfig.json",
+    "test": "jest",
+    "test-watch": "jest --watch",
+    "test-coverage": "jest --coverage"
+  },
+  "jest": {
+    "collectCoverage": true,
+    "collectCoverageFrom": [
+      "src/**/*.{js,ts,tsx}",
+      "!./src/utils/**",
+      "!./src/index.ts",
+      "!./src/types.d.ts",
+      "!./src/**/Styles/**"
+    ],
+    "setupFilesAfterEnv": [
+      "./src/setupTests.ts"
+    ],
+    "roots": [
+      "<rootDir>/src"
+    ],
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "keywords": [],
+  "author": "Riain Condon",
+  "license": "MIT",
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "yarn"
+      },
+      "electronWinstallerConfig": {
+        "name": "QLite"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "QLite",
+        "name": "QLite"
+      }
+    }
+  },
+  "dependencies": {
+    "@devexpress/dx-react-core": "^1.10.5",
+    "@devexpress/dx-react-grid": "^1.10.5",
+    "@devexpress/dx-react-grid-material-ui": "^1.10.5",
+    "@material-ui/core": "^3.9.3",
+    "@material-ui/icons": "^3.0.2",
+    "@material-ui/styles": "^3.0.0-alpha.10",
+    "@types/electron-devtools-installer": "^2.0.2",
+    "@types/enzyme-adapter-react-16": "^1.0.5",
+    "@types/node": "^11.11.3",
+    "@types/react": "^16.8.7",
+    "@types/react-dom": "^16.8.2",
+    "@types/react-router": "^4.4.5",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/react-select": "^2.0.17",
+    "@types/react-table": "^6.8.0",
+    "@types/react-test-renderer": "^16.8.1",
+    "@types/styled-components": "^4.1.12",
+    "axios": "^0.18.0",
+    "electron-compile": "^6.4.4",
+    "electron-devtools-installer": "^2.1.0",
+    "electron-squirrel-startup": "^1.0.0",
+    "electron-store": "^3.2.0",
+    "formik": "^1.5.1",
+    "formik-material-ui": "^0.0.16",
+    "material-table": "^1.36.4",
+    "mdbreact": "^4.13.0",
+    "moment": "^2.24.0",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "react-gemini-scrollbar": "^2.3.4",
+    "react-hot-loader": "^4.8.0",
+    "react-modal": "^3.8.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-router-transition": "^1.3.0",
+    "react-select": "^2.4.3",
+    "react-table": "^6.9.2",
+    "smart-timeout": "^2.0.4",
+    "styled-components": "^4.1.3",
+    "tslib": "^1.4.0"
+  },
+  "devDependencies": {
+    "@types/cypress": "^1.1.3",
+    "@types/enzyme": "^3.9.0",
+    "@types/jest": "^24.0.11",
+    "axios-mock-adapter": "^1.16.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "cypress": "^3.3.0",
+    "electron-forge": "^5.2.4",
+    "electron-prebuilt-compile": "4.0.0",
+    "enzyme": "^3.9.0",
+    "enzyme-adapter-react-16": "^1.11.2",
+    "jest": "^24.5.0",
+    "react-test-renderer": "^16.8.4",
+    "ts-jest": "^24.0.0",
+    "tslint": "^5.1.0",
+    "typescript": "~3.3.3333"
+  }
+}

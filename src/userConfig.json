@@ -1,0 +1,12 @@
+{
+	"api": "34.250.72.1:8080",
+	"qboxes": [
+		{
+			"name": "QBox Name",
+			"type": "QBox Type",
+			"macAddress": "QBox Mac Address",
+			"ipAddress": "QBox IP Address"
+		}
+	],
+	"checked": true
+}

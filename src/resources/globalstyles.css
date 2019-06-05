@@ -1,0 +1,138 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300);
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+
+body {
+    background: #34495e;
+    font-family: 'Open Sans';   
+    margin: 0px;
+    padding: 0px;
+}
+
+.div > .tableqlite {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+.tableqlite > ::-webkit-scrollbar {
+    width: 3px;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+.tableqlite > ::-webkit-scrollbar-thumb {
+    background: #F5f5f5;
+}
+
+input#api {
+    color: #fff;
+}
+label#name {
+    color: #fff;
+}
+label {
+    color: #fff !important;
+}
+
+div[class^='MuiInput-underline'], div[class*=' MuiInput-underline']::before {
+    border-bottom: 1px solid #2bbbad;
+}
+
+div[class^='MuiInput-underline'], div[class*=' MuiInput-underline']:hover {
+    border-bottom: 1px solid #2bbbad;
+}
+
+div[class^='MuiInput-underline'], div[class*=' MuiInput-underline']::after {
+    border-bottom: 2px solid #fff;
+}
+
+div[class^='MuiFormControl-root'] * {
+    color: #fff;
+}
+
+input#name[class^='MuiInputBase-input'] {
+    color: #fff !important;
+}
+
+input#owner[class^='MuiInputBase-input'] {
+    color: #fff !important;
+}
+
+button#ack {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+.triggerBtn {
+    transition: all 1s ease-in !important;
+}
+
+.gray {
+    filter: grayscale(100%);
+    transition: all 1s ease-in;
+}
+
+.qbox {
+    height: 50px;
+    width: 30px;
+    border: 2px #000 solid;
+    display: inline-block;
+    margin-top: 5px;
+}
+
+.circle-red-on {
+    background: #f00;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 25%;
+}
+
+.circle-red-off {
+    background: #f00;
+    opacity: 0.4;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 25%;
+}
+
+.circle-green-on {
+    background: #0f0;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 25%;
+}
+
+.circle-green-off {
+    background: #0f0;
+    opacity: 0.4;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 25%;
+}
+
+input[class^='MuiInputBase-input'] {
+    color: rgba(0, 0, 0, 0.54) !important;
+}
+
+div[class^='MuiInputBase-input'] {
+    color: rgba(0, 0, 0, 0.54) !important;
+}
+
+span.material-icons {
+    color: rgba(0, 0, 0, 0.54) !important;
+}
+
+tr[class^='MuiTableRow-root'].runAck {
+    background-color: rgba(255, 0, 0, 0.5);
+    transition: all 1s ease-in;
+}
+
+tr[class^='MuiTableRow-root'].runGo {
+    background-color: rgba(0, 255, 0, 0.5);
+    transition: all 1s ease-in;
+}
+
+tr[class^='MuiTableRow-root'] {
+    transition: all 1s ease-in;
+}
