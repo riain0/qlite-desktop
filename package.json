@@ -100,7 +100,7 @@
     "formik-material-ui": "^0.0.16",
     "material-table": "^1.36.4",
     "mdbreact": "^4.13.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "react": "^16.8.4",
     "react-dom": "^16.8.4",
     "react-gemini-scrollbar": "^2.3.4",
